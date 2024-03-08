@@ -1,0 +1,159 @@
+Kali Linux, birçok siber güvenlik ve penetrasyon testi aracı içeren popüler bir Linux dağıtımıdır. İşte Kali Linux ile kullanılan bazı temel komutlar ve açıklamaları:
+
+ls: Bu komut, mevcut dizindeki dosya ve klasörleri listeler.
+Örnek kullanım: ls
+
+cd: Bu komut, dizin değiştirmek için kullanılır.
+Örnek kullanım: cd /path/to/directory
+
+pwd: Bu komut, mevcut çalışma dizinini (current working directory) gösterir.
+Örnek kullanım: pwd
+
+mkdir: Bu komut, yeni bir dizin oluşturmak için kullanılır.
+Örnek kullanım: mkdir directory_name
+
+touch: Bu komut, yeni bir dosya oluşturmak için kullanılır.
+Örnek kullanım: touch filename
+
+cp: Bu komut, dosya veya dizinleri kopyalamak için kullanılır.
+Örnek kullanım: cp source_file destination
+
+mv: Bu komut, dosya veya dizinleri taşımak veya yeniden adlandırmak için kullanılır.
+Örnek kullanım: mv source destination
+
+rm: Bu komut, dosya veya dizinleri silmek için kullanılır.
+Örnek kullanım: rm file_name
+
+cat: Bu komut, bir dosyanın içeriğini terminale yazdırmak için kullanılır.
+Örnek kullanım: cat file_name
+
+grep: Bu komut, bir dosyada veya çıktıda belirli bir metni aramak için kullanılır.
+Örnek kullanım: grep "search_text" file_name
+
+chmod: Bu komut, dosya veya dizinlerin izinlerini değiştirmek için kullanılır.
+Örnek kullanım: chmod permissions file_name
+
+chown: Bu komut, bir dosyanın veya dizinin sahibini değiştirmek için kullanılır.
+Örnek kullanım: chown user_name file_name
+
+ifconfig: Bu komut, ağ arabirimlerinin yapılandırmasını gösterir.
+Örnek kullanım: ifconfig
+
+ping: Bu komut, bir IP adresine veya alan adına ping atmak için kullanılır.
+Örnek kullanım: ping IP_address_or_domain
+
+netstat: Bu komut, ağ bağlantılarını, bağlantı noktalarını ve ağ istatistiklerini görüntüler.
+Örnek kullanım: netstat
+
+Bu sadece bazı temel komutlardır ve Kali Linux'ta kullanılan birçok başka komut bulunmaktadır. Her bir komutun daha detaylı açıklamaları için "man" komutunu kullanabilirsiniz. Örneğin, "man ls" komutunu kullanarak "ls" komutunun detaylı bir açıklamasını görebilirsiniz.
+
+Siber güvenlik ve penetrasyon testi için Kali Linux içinde birçok araç bulunmaktadır. İşte bazı temel araçlar ve bunların kullanıldığı komutlar:
+
+1. **Nmap**: Ağ taraması yapmak için kullanılır.
+   Örnek kullanım: `nmap target_ip`
+
+2. **Metasploit Framework**: Zafiyet taraması ve penetrasyon testi için kullanılan bir çerçevedir.
+   Örnek kullanım: `msfconsole`
+
+3. **Wireshark**: Ağ trafiğini izlemek ve paket analizi yapmak için kullanılır.
+   Örnek kullanım: `wireshark`
+
+4. **Burp Suite**: Web uygulama güvenlik testleri için kullanılan bir araçtır.
+   Örnek kullanım: `burpsuite`
+
+5. **John the Ripper**: Parola kırma işlemleri için kullanılır.
+   Örnek kullanım: `john password_file`
+
+6. **Hydra**: Çeşitli protokollerde (FTP, SSH, HTTP vb.) oturum açma saldırıları gerçekleştirmek için kullanılır.
+   Örnek kullanım: `hydra -L username_list -P password_list target_ip protocol`
+
+7. **Aircrack-ng**: Kablosuz ağ güvenliği testleri için kullanılan bir araçtır.
+   Örnek kullanım: `aircrack-ng capture_file.cap`
+
+8. **Nikto**: Web sunucularını ve uygulamalarını tarayarak güvenlik açıklarını bulmak için kullanılır.
+   Örnek kullanım: `nikto -h target_url`
+
+9. **Sqlmap**: SQL enjeksiyon saldırılarını otomatik olarak keşfetmek ve kullanmak için kullanılır.
+   Örnek kullanım: `sqlmap -u target_url --dbs`
+
+10. **Dirb**: Web sunucularında dizin keşfi yapmak için kullanılır.
+    Örnek kullanım: `dirb target_url`
+
+Bu sadece bazı temel araçlardır ve Kali Linux içinde birçok başka araç bulunmaktadır. Her bir aracın daha detaylı kullanımı için "man" komutunu kullanabilirsiniz. Örneğin, "man nmap" komutunu kullanarak Nmap aracının detaylı belgelerine ulaşabilirsiniz.
+
+Ağ bağlantılarını ve istatistiklerini görüntülemek için aşağıdaki komutları kullanabilirsiniz:
+
+1. **ifconfig**: Bu komut, ağ arabirimlerinin yapılandırmasını gösterir. IP adresleri, ağ maskeleri, MAC adresleri ve diğer ağ bağlantı bilgileri gibi ayrıntıları görüntüler. Örnek kullanım: `ifconfig`
+
+2. **netstat**: Bu komut, ağ bağlantılarını, bağlantı noktalarını ve ağ istatistiklerini görüntüler. Etkin bağlantıları, dinleyen bağlantıları, bağlantı noktalarını ve diğer ağ istatistiklerini görebilirsiniz. Örnek kullanım: `netstat`
+
+Dosya ve dizinlerin izinlerini değiştirmek için aşağıdaki komutları kullanabilirsiniz:
+
+1. **chmod**: Bu komut, dosya ve dizinlerin izinlerini değiştirmek için kullanılır. İzinler, kullanıcının, kullanıcı grubunun ve diğer kullanıcıların dosyaları okuma, yazma veya yürütme yeteneklerini kontrol etmek için kullanılır.
+
+   - **chmod +x file**: Dosyanın yürütme iznini ekler.
+   - **chmod -x file**: Dosyanın yürütme iznini kaldırır.
+   - **chmod u+r file**: Kullanıcının dosyayı okuma iznini ekler.
+   - **chmod u-w file**: Kullanıcının dosyayı yazma iznini kaldırır.
+   - **chmod g+rw file**: Kullanıcı grubunun dosyayı okuma ve yazma iznini ekler.
+   - **chmod o-rwx file**: Diğer kullanıcıların dosyayı okuma, yazma ve yürütme iznini kaldırır.
+
+   Örnek kullanım: `chmod +x script.sh`
+
+2. **chown**: Bu komut, bir dosyanın veya dizinin sahipliğini ve grup sahipliğini değiştirmek için kullanılır. Dosyanın sahibi ve grup sahibi, dosya üzerindeki izinleri kontrol etmek için önemlidir.
+
+   - **chown user:group file**: Dosyanın sahibini ve grup sahibini belirli bir kullanıcıya ve kullanıcı grubuna değiştirir.
+
+   Örnek kullanım: `chown john:users file.txt`
+
+Bu komutların daha fazla ayrıntısı için "man" komutunu kullanarak ilgili komutun man sayfasını inceleyebilirsiniz. Örneğin, "man chmod" veya "man chown" komutlarını kullanarak bu komutların detaylı açıklamalarını görebilirsiniz.
+
+`chmod` komutu, dosya izinlerini değiştirmek için kullanılır. İzinleri değiştirmek için genellikle üç farklı izin grubu kullanılır: kullanıcı (user), grup (group) ve diğer (others). Her izin grubu için üç temel izin vardır: okuma (read), yazma (write) ve yürütme (execute).
+
+`chmod` komutu, izinleri sembolik veya octal (sekizli) formatta belirtmek için kullanılabilir. İşte her iki yöntemin kullanımı:
+
+**1. Sembolik Mod**
+
+Sembolik mod, izinleri sembolik olarak eklemek (+) veya kaldırmak (-) için kullanılır. Aşağıda sembolik mod kullanarak dosya izinlerini değiştirmek için kullanılan sembollerin bir özeti bulunmaktadır:
+
+| Sembol | İzin       |
+|--------|------------|
+| r      | Okuma      |
+| w      | Yazma      |
+| x      | Yürütme    |
+| u      | Kullanıcı  |
+| g      | Grup       |
+| o      | Diğerleri  |
+| a      | Tümü       |
+
+Örnekler:
+
+- Dosyanın kullanıcı iznini okuma ve yazma yap: `chmod u+rw file.txt`
+- Dosyanın grup iznini yürütme yapma: `chmod g+x file.txt`
+- Dosyanın diğer iznini okuma ve yürütme kaldırma: `chmod o-rx file.txt`
+- Dosyanın tüm izinlerini kapatma: `chmod a-rwx file.txt`
+
+**2. Octal Mod**
+
+Octal mod, izinleri sekizli (octal) sayılarla temsil etmek için kullanılır. İzinlerin her biri için sayısal değerler kullanılır:
+
+| Sayı | İzin       |
+|------|------------|
+| 0    | Yok        |
+| 1    | Yürütme    |
+| 2    | Yazma      |
+| 3    | Yazma + Yürütme |
+| 4    | Okuma      |
+| 5    | Okuma + Yürütme |
+| 6    | Okuma + Yazma |
+| 7    | Okuma + Yazma + Yürütme |
+
+Örnekler:
+
+- Dosyanın kullanıcı iznini okuma ve yazma yap: `chmod 600 file.txt`
+- Dosyanın grup ve diğer iznini yürütme yapma: `chmod 711 file.txt`
+- Dosyanın tüm izinlerini kapatma: `chmod 000 file.txt`
+
+Bu örneklerde `file.txt`, değiştirilmek istenen dosyanın adını temsil etmektedir. İzinleri değiştirmek için uygun kullanıcı yetkilerine sahip olmanız gerekmektedir.
+
+Daha fazla ayrıntı için `man chmod` komutunu kullanarak `chmod` komutunun man sayfasını inceleyebilirsiniz.
