@@ -25,3 +25,31 @@ Kali Linux üzerinde açık bir port üzerinde sızma yapmak için aşağıdaki 
    - Gerekli ayarları yapılandırdıktan sonra `exploit` komutunu kullanarak exploit'i çalıştırabilirsiniz.
 
 Bu adımlar, genel bir sızma testi sürecini temsil etmektedir. Ancak, sızma testleri yasal ve etik sınırlamalara tabidir. Bir sisteme sızma testi yapmadan önce, önceden izin almanız ve yalnızca yetkilendirilmiş sistemlere sızma testi yapmanız gerekmektedir. Ayrıca, sızma testlerini gerçekleştirirken hedef sistemlere zarar vermeye çalışmamalı ve yasalara uymalısınız.
+
+Tabii, size her bir aracın temel kullanımını anlatabilirim. Ancak, bu araçların karmaşık ve güçlü olduğunu unutmayın ve etik sınırlar içinde kullanılması gerektiğini hatırlatmak isterim. Aşağıda araçların temel kullanımı hakkında genel bir bilgi vereceğim:
+
+**Zafiyet Taraması Araçları:**
+
+1. **Nessus**: Nessus'u kullanmak için öncelikle bir Nessus sunucusuna ihtiyacınız vardır. Ardından, tarama politikalarınızı oluşturmanız ve hedef ağları belirlemeniz gerekmektedir. Tarama politikaları, hangi zafiyetlerin tarama sırasında kontrol edileceği ve raporlanacağına dair yönergeleri içerir. Nessus, belirtilen hedefler üzerinde taramaları gerçekleştirir ve sonuçları raporlar.
+
+2. **OpenVAS**: OpenVAS, Nessus'a benzer bir şekilde çalışır. Öncelikle OpenVAS sunucusunu yapılandırmanız ve tarama politikalarınızı belirlemeniz gerekmektedir. Daha sonra hedef ağları ve tarama parametrelerini belirtir ve taramaları başlatırsınız. OpenVAS, hedefler üzerinde güvenlik açıklarını tespit eder ve raporlar.
+
+3. **Nexpose**: Nexpose'u kullanmak için öncelikle bir Nexpose sunucusuna ihtiyacınız vardır. Sunucuyu yapılandırdıktan sonra, tarama politikalarınızı belirleyebilir ve hedefleri tanımlayabilirsiniz. Nexpose, belirlediğiniz politikalara göre hedefleri tarar ve zafiyetleri tespit eder.
+
+4. **Qualys**: Qualys, bulut tabanlı bir hizmet olduğu için bir hesap oluşturmanız gerekmektedir. Hesabınızı oluşturduktan sonra, hedefleri belirleyebilir ve tarama politikalarını yapılandırabilirsiniz. Qualys, hedefleri taramak ve güvenlik açıklarını raporlamak için bulut altyapısını kullanır.
+
+5. **OpenSCAP**: OpenSCAP, önceden tanımlanmış standartlara uyumluluğu değerlendirmek için kullanılabilir. Öncelikle uyumluluk profilleri oluşturmanız ve ardından hedef sistemlerinizi tarayabilmeniz için bu profilleri kullanmanız gerekmektedir. OpenSCAP, güvenlik açıklarını tespit eder ve uyumluluk raporları üretir.
+
+**Zafiyet İstismarı Araçları:**
+
+1. **Metasploit Framework**: Metasploit Framework, geniş bir exploit veritabanı ve otomatik saldırı modülleriyle birlikte gelir. Aracı başlattıktan sonra, hedef sistemlerinizi taramak ve erişim sağlamak için exploitlerinizi seçebilir veya özel exploitler oluşturabilirsiniz.
+
+2. **Burp Suite**: Burp Suite, web uygulamalarının güvenlik testleri için bir dizi araç sunar. Aracı başlattıktan sonra, web tarayıcınızı Burp Proxy'ye yönlendirirsiniz. Burp Proxy, web trafiğini yakalar ve inceleyerek potansiyel güvenlik açıklarını tespit etmenize olanak sağlar.
+
+3. **SQLMap**: SQLMap, SQL enjeksiyon zafiyetlerini otomatik olarak tespit etmek ve istismar etmek için kullanılır. SQLMap'ı hedef web uygulamasına yönlendirir ve ardından SQL enjeksiyon noktalarını tespit etmek ve gerekirse otomatik olarak saldırılar gerçekleştirmek için aracı yapılandırırsınız.
+
+4. **OWASP ZAP**: OWASP ZAP, web uygulamalarının güvenliktarayıcısı olarak kullanılır. OWASP ZAP'ı başlattıktan sonra, hedef web uygulamasını tarayabilir ve potansiyel güvenlik açıklarını tespit edebilirsiniz. Aracın sunduğu özellikler arasında aktif ve pasif tarayıcı modları, zafiyet tespiti, otomatik saldırılar ve raporlama bulunur.
+
+5. **BeEF (Browser Exploitation Framework)**: BeEF, web tarayıcılarındaki zafiyetleri hedef alan bir araçtır. Aracı başlattıktan sonra, hedef web tarayıcılarına yönlendirilen XSS (Cross-Site Scripting) saldırıları gerçekleştirebilirsiniz. BeEF, tarayıcıdaki zafiyetlerden yararlanarak çeşitli saldırı senaryolarını otomatikleştirmenize olanak sağlar.
+
+Bu araçlar oldukça güçlüdür ve doğru bir şekilde kullanıldığında güvenlik testleri için faydalı olabilir. Ancak, araçların etik sınırlar içinde kullanılması ve yasal izinlerin alınması önemlidir. Ayrıca, bu araçları kullanmanız gereken durumlarda, yetkinlik sahibi olmanız ve kullanımı hakkında derinlemesine bilgi sahibi olmanız önemlidir.
