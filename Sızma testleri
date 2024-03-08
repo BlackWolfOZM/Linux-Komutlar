@@ -1,0 +1,27 @@
+Kali Linux üzerinde açık bir port üzerinde sızma yapmak için aşağıdaki adımları izleyebilirsiniz:
+
+1. **Port Taraması (Nmap)**: İlk adım, hedef sistemin üzerinde açık olan portları tespit etmektir. Bunun için Nmap aracını kullanabilirsiniz. Aşağıdaki komutu kullanarak hedef sistemi tarayabilirsiniz:
+
+   ```
+   nmap -p <port_numarası> <hedef_ip>
+   ```
+
+   Örneğin, hedef IP adresi `192.168.1.100` olan ve 80 numaralı portun açık olup olmadığını kontrol etmek için aşağıdaki komutu kullanabilirsiniz:
+
+   ```
+   nmap -p 80 192.168.1.100
+   ```
+
+   Bu komut, hedef IP adresi üzerinde 80 numaralı portun durumunu (açık, kapalı veya filtrelendi) gösterecektir.
+
+2. **Zafiyet Taraması (Nessus, OpenVAS vb.)**: Port taraması sonucunda açık bir port tespit edildiyse, bu port üzerinde zafiyet taraması yapmanız önerilir. Kali Linux'ta Nessus veya OpenVAS gibi zafiyet tarama araçlarını kullanabilirsiniz. Bu araçlar, hedef sistemin üzerindeki zafiyetleri tespit etmek ve güvenlik açıklarını bulmak için kullanılır.
+
+3. **Exploit Çalıştırma (Metasploit Framework)**: Zafiyet taraması sonucunda bir veya daha fazla zafiyet bulduysanız, bu zafiyetleri istismar etmek için Metasploit Framework'ü kullanabilirsiniz. Metasploit, çeşitli exploitler ve payloadlar sağlayan bir sızma testi çerçevesidir.
+
+   - `msfconsole` komutunu çalıştırarak Metasploit Framework'ü başlatabilirsiniz.
+   - `search` komutunu kullanarak hedef sistemdeki zafiyetler için uygun bir exploit bulabilirsiniz.
+   - `use` komutunu kullanarak bir exploit modülü seçebilirsiniz.
+   - `show options` komutuyla seçilen exploit modülünün gerektirdiği ayarları görüntüleyebilirsiniz.
+   - Gerekli ayarları yapılandırdıktan sonra `exploit` komutunu kullanarak exploit'i çalıştırabilirsiniz.
+
+Bu adımlar, genel bir sızma testi sürecini temsil etmektedir. Ancak, sızma testleri yasal ve etik sınırlamalara tabidir. Bir sisteme sızma testi yapmadan önce, önceden izin almanız ve yalnızca yetkilendirilmiş sistemlere sızma testi yapmanız gerekmektedir. Ayrıca, sızma testlerini gerçekleştirirken hedef sistemlere zarar vermeye çalışmamalı ve yasalara uymalısınız.
