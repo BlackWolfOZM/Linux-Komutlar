@@ -106,7 +106,7 @@ screen                         #Screen üzerinde yeni bir konsol açmak için;
 
 screen -S "oturum_ismi"        #Screen komutunu girdiğiniz anda, terminal üzerinde sanal olarak bir tane daha oturum açılır ve artık yeni oturumda işlemlerinizi yaparsınız. -S parametresi ile beraber, yeni bir oturum açılır ve oturuma isim verilir.
 
-ctrl+a+d                       #Ana ekrana dönmek için;
+ctrl+a+d                       #Ana ekrana dönmek için; içine girdiğimiz ekrandan çıkmak için.
 
 screen -xS oturum_ismi         #Açtığınız oturuma tekrar dönmeniz için;
 
